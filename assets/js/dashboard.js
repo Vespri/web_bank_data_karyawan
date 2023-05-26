@@ -6,8 +6,7 @@ $(function () {
   // =====================================
   var chart = {
     series: [
-      { name: "Earnings this month:", data: [355, 390, 300, 350, 390, 180, 355, 390] },
-      { name: "Expense this month:", data: [280, 250, 325, 215, 250, 310, 280, 250] },
+      { name: "Total Karyawan:", data: [355, 390, 300, 350] }
     ],
 
     chart: {
@@ -57,7 +56,7 @@ $(function () {
 
     xaxis: {
       type: "category",
-      categories: ["16/08", "17/08", "18/08", "19/08", "20/08", "21/08", "22/08", "23/08"],
+      categories: ["Supervisor", "Officer", "Superintendent", "Manager"],
       labels: {
         style: { cssClass: "grey--text lighten-2--text fill-color" },
       },
