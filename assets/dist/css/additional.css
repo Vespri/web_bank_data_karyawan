@@ -1,0 +1,31 @@
+/* Custom Style */
+
+.text-up {
+    text-transform: uppercase;
+}
+
+.text-low {
+    text-transform: uppercase;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+th:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+.custom-search-input, .custom-search-input:focus {
+    background-color: #1C364B;
+    color: #fff;
+    border-color: #fff;
+}
+
+.custom-search-input::placeholder {
+    color: #fff;
+}
