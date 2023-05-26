@@ -14,4 +14,16 @@ class M_detail_gaji extends CI_Model
             return false;
         }
     }
+
+    public function update_data($gaji_pokok, $transport, $tunjangan_keluarga, $bpjs, $id_karyawan)
+    {
+        $this->db->trans_start();
+        $this->db->query("SELECT * FROM update_detail_gaji($gaji_pokok, $transport, $tunjangan_keluarga, $bpjs, '$id_karyawan')");
+        $this->db->trans_complete();
+        if ($this->db->trans_status() == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

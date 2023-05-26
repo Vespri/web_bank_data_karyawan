@@ -3,6 +3,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class M_karyawan extends CI_Model
 {
+    public function count_all()
+    {
+        $result = $this->db->query("SELECT * FROM count_all_data()");
+        return $result->result_array();
+    }
+
     public function read_all_data()
     {
         $result = $this->db->query("SELECT * FROM read_all_karyawan()");
@@ -18,10 +24,10 @@ class M_karyawan extends CI_Model
     public function create_data($nama, $jenis_kelamin, $jabatan, $alamat, $agama, $no_hp, $email, $status_pernikahan, $total_gaji_akhir)
     {
         $this->db->trans_start();
-        $this->db->query("SELECT * FROM create_karyawan('$nama', '$jenis_kelamin', '$jabatan', '$alamat', '$agama', '$no_hp', '$email', '$status_pernikahan', $total_gaji_akhir)");
+        $result = $this->db->query("SELECT * FROM create_karyawan('$nama', '$jenis_kelamin', '$jabatan', '$alamat', '$agama', '$no_hp', '$email', '$status_pernikahan', $total_gaji_akhir)");
         $this->db->trans_complete();
         if ($this->db->trans_status() == true) {
-            return true;
+            return $result->row_array();
         } else {
             return false;
         }

@@ -59,4 +59,7 @@ $route['dashboard_view'] = 'Dashboard/dashboard_view';
 // Karyawan
 $route['karyawan_view'] = 'Karyawan/karyawan_view';
 $route['create_view'] = 'Karyawan/create_view';
+$route['create_karyawan'] = 'Karyawan/create_karyawan';
 $route['update_view/(:any)'] = 'Karyawan/update_view/$1';
+$route['update_karyawan'] = 'Karyawan/update_karyawan';
+$route['delete_karyawan'] = 'Karyawan/delete_karyawan';
