@@ -1,26 +1,19 @@
-###################
-Documentation
-###################
+# Documentation
 
 Aplikasi Bank Data Karyawan adalah aplikasi CRUD(Create, Read, Update, Delete) data karyawan beserta detail Gaji Tiap Jabatan.
 
-*******************
-Clone Repo
-*******************
+## Clone Repo
 
 ```
 git clone https://github.com/Vespri/web_bank_data_karyawan.git
 ```
 
-**************************
-File DB Location
-**************************
+## File DB Location
 
-You can find a pg_dump for Database in `assets <https://github.com/Vespri/web_bank_data_karyawan/tree/main/assets/database>`_.
+You can find a pg_dump for Database in [assets](https://github.com/Vespri/web_bank_data_karyawan/tree/main/assets/database)
 
-*******************
-Routes (Local Only)
-*******************
+## Routes (Local Only)
+
 -  Dashboard
 ```
 http://localhost/app_bank_karyawan/
