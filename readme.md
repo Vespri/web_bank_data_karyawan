@@ -8,7 +8,7 @@ Aplikasi Bank Data Karyawan adalah aplikasi CRUD(Create, Read, Update, Delete) d
 git clone https://github.com/Vespri/web_bank_data_karyawan.git
 ```
 
-## File DB Location
+## DB File Location
 
 You can find a pg_dump for Database in [assets](https://github.com/Vespri/web_bank_data_karyawan/tree/main/assets/database)
 
